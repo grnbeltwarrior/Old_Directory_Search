@@ -1,10 +1,10 @@
 ﻿#Variables
 $date = Get-Date
 $date = $date.ToString("yyyy-MM-dd")
-$fromDirectory = "H:\Old" # Change this, directory to search for directories older than 365 days.
-$toDirectory = "H:\Test" # Change this, directory where you want to move the directories older than 365 days.
-$toDirectoryZip = "H:\Test\backup.$date.zip" # Change this, directory where you want to store backups for data retention incase something happens.
-$errorFile = "H:\Test\error.txt" # Change this, file where errors can be written.
+$fromDirectory = "D:\Old" # Change this, directory to search for directories older than 365 days.
+$toDirectory = "D:\Test" # Change this, directory where you want to move the directories older than 365 days.
+$toDirectoryZip = "D:\Test\backup.$date.zip" # Change this, directory where you want to store backups for data retention incase something happens.
+$errorFile = "D:\Test\error.txt" # Change this, file where errors can be written.
 
 function Move-Directory {
     $directoryList = Get-ChildItem -Directory $fromDirectory
